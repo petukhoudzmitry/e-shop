@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Customer Information</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="page-wrap">
+    <header class="site-header"></header>
+    <main>
+        <section class="container py-4 py-lg-5">
+            <h1 class="section-title mb-2">Checkout</h1>
+            <div class="stepper"><a class="step-pill " href="checkout-delivery.html">Delivery</a><a class="step-pill "
+                                                                                                    href="checkout-payment.html">Payment</a><a
+                    class="step-pill active" href="checkout-info.html">Info</a><a class="step-pill "
+                                                                                  href="checkout-summary.html">Summary</a>
+            </div>
+            <div class="checkout-grid align-items-start">
+                <div class="panel p-4">
+                    <h2 class="h3 mb-4">Customer Information</h2>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label" for="full-name">Full Name</label>
+                            <input id="full-name" class="form-control" placeholder="John Doe">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="email">Email</label>
+                            <input id="email" type="email" class="form-control" placeholder="email@domain.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="phone">Phone</label>
+                            <input id="phone" type="tel" class="form-control" placeholder="+421 900 000 000">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="country">Country</label>
+                            <input id="country" type="text" class="form-control" placeholder="Slovakia">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="address">Address</label>
+                            <input id="address" type="text" class="form-control" placeholder="Main Street 15">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="city">City</label>
+                            <input id="city" type="text" class="form-control" placeholder="Bratislava">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="zip-code">ZIP Code</label>
+                            <input id="zip-code" type="text" class="form-control" placeholder="811 01">
+                        </div>
+
+                    </div>
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="saveInfo">
+                        <label class="form-check-label" for="saveInfo">Save information for next time</label>
+                    </div>
+                    <div class="small muted mt-3">Checkout works without a login. Existing users can sign in later.</div>
+
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a class="btn-base btn-lightish text-center" href="checkout-payment.html">Back</a>
+                        <a class="btn-base btn-black text-center" href="checkout-summary.html">Continue to Summary</a>
+                    </div>
+                </div>
+                <aside class="summary-card">
+                    <h3 class="h5 mb-3">Order Summary</h3>
+                    <div class="small text-uppercase muted mb-2">Items</div>
+                    <div class="d-flex justify-content-between mb-2"><span>MacBook Pro 14" × 1</span><span>$1999</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3"><span>MacBook Pro 16" × 1</span><span>$1999</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2"><span
+                            class="muted">Subtotal</span><strong>$3998</strong></div>
+                    <div class="d-flex justify-content-between mb-2"><span
+                            class="muted">Delivery</span><strong>$10</strong></div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center"><span
+                            class="fw-semibold">Total</span><span class="price">$4008</span></div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer mt-auto"></footer>
+</div>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/components.js"></script>
+</body>
+</html>

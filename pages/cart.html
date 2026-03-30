@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="page-wrap">
+    <header class="site-header"></header>
+    <main>
+        <section class="container py-4 py-lg-5">
+            <h1 class="section-title">Shopping Cart</h1>
+
+            <div class="cart-grid align-items-start">
+                <div class="panel p-0 overflow-hidden">
+
+                    <div class="cart-item">
+                        <div class="placeholder-media">Image</div>
+
+                        <div class="cart-main">
+                            <h3 class="h5 mb-1">MacBook Pro 14</h3>
+                            <div class="muted small">Premium notebook with aluminum body and sharp display.</div>
+                        </div>
+
+                        <div class="cart-meta">
+                            <div class="small muted">Price</div>
+                            <div class="fw-semibold">$1999</div>
+                        </div>
+
+                        <div class="cart-meta">
+                            <label class="small muted mb-1" for="quantity1">Quantity</label>
+                            <input id="quantity1" class="form-control quantity-input" type="number" min="1" value="1">
+                        </div>
+
+                        <div class="cart-meta">
+                            <div class="small muted">Total</div>
+                            <div class="fw-semibold">$1999</div>
+                        </div>
+
+                        <div class="cart-actions">
+                            <button class="btn-base btn btn-outline-danger">Remove</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="placeholder-media">Image</div>
+
+                        <div class="cart-main">
+                            <h3 class="h5 mb-1">MacBook Pro 16</h3>
+                            <div class="muted small">Premium notebook with aluminum body and sharp display.</div>
+                        </div>
+
+                        <div class="cart-meta">
+                            <div class="small muted">Price</div>
+                            <div class="fw-semibold">$1999</div>
+                        </div>
+
+                        <div class="cart-meta">
+                            <label class="small muted mb-1" for="quantity2">Quantity</label>
+                            <input id="quantity2" class="form-control quantity-input" type="number" min="1" value="1">
+                        </div>
+
+                        <div class="cart-meta">
+                            <div class="small muted">Total</div>
+                            <div class="fw-semibold">$1999</div>
+                        </div>
+
+                        <div class="cart-actions">
+                            <button class="btn-base btn btn-outline-danger">Remove</button>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="summary-card">
+                    <h2 class="h4 mb-3">Summary</h2>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="muted">Subtotal</span><strong>$3998</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="muted">Delivery</span><strong>$10</strong>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <span class="fw-semibold">Total</span>
+                        <span class="price">$4008</span>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a class="btn-base btn-lightish text-center" href="category.html">Continue Shopping</a>
+                        <a class="btn-base btn-black text-center" href="checkout-delivery.html">Proceed to Checkout</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer mt-auto"></footer>
+</div>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Order Summary</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="page-wrap">
+    <header class="site-header"></header>
+    <main>
+        <section class="container py-4 py-lg-5">
+            <h1 class="section-title mb-2">Checkout</h1>
+            <div class="stepper"><a class="step-pill " href="checkout-delivery.html">Delivery</a><a class="step-pill "
+                                                                                                    href="checkout-payment.html">Payment</a><a
+                    class="step-pill " href="checkout-info.html">Info</a><a class="step-pill active"
+                                                                            href="checkout-summary.html">Summary</a>
+            </div>
+            <div class="checkout-grid align-items-start">
+                <div class="panel p-4">
+                    <h2 class="h3 mb-4">Order Summary</h2>
+
+                    <div class="panel p-3 border-0 shadow-none bg-transparent">
+                        <div class="small text-uppercase muted mb-2">Products</div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>MacBook Pro 14" × 1</span><span>$1999</span></div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <span>MacBook Pro 16" × 1</span><span>$1999</span></div>
+                        <div class="small text-uppercase muted mb-2">Delivery</div>
+                        <div class="mb-4">Courier Delivery — $10</div>
+                        <div class="small text-uppercase muted mb-2">Payment</div>
+                        <div class="mb-4">Credit Card</div>
+                        <div class="small text-uppercase muted mb-2">Customer</div>
+                        <div class="muted">John Doe<br>email@domain.com<br>Main Street 15, Bratislava, 811 01, Slovakia
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a class="btn-base btn-lightish text-center" href="checkout-info.html">Back</a>
+                        <a class="btn-base btn-black text-center" href="#">Confirm Order</a>
+                    </div>
+                </div>
+                <aside class="summary-card">
+                    <h3 class="h5 mb-3">Order Summary</h3>
+                    <div class="small text-uppercase muted mb-2">Items</div>
+                    <div class="d-flex justify-content-between mb-2"><span>MacBook Pro 14" × 1</span><span>$1999</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3"><span>MacBook Pro 16" × 1</span><span>$1999</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2"><span
+                            class="muted">Subtotal</span><strong>$3998</strong></div>
+                    <div class="d-flex justify-content-between mb-2"><span
+                            class="muted">Delivery</span><strong>$10</strong></div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center"><span
+                            class="fw-semibold">Total</span><span class="price">$4008</span></div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer mt-auto"></footer>
+</div>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/components.js"></script>
+</body>
+</html>
